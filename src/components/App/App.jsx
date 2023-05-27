@@ -14,7 +14,7 @@ const App = () => {
     neutral,
     bad,
   };
-  
+
   const handleReviewCounter = e => {
     e.preventDefault();
     const { name } = e.currentTarget;
@@ -31,11 +31,10 @@ const App = () => {
       default:
         break;
     }
- 
   };
   return (
     <Container>
-      <h1> HW2-1 </h1>
+      <h1> HW4-1-useState </h1>
       <Section title="Please leave feedback">
         <FeedbackOptions {...feedbacks} onLeaveFeedback={handleReviewCounter} />
       </Section>
